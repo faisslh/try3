@@ -1,0 +1,150 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
+	background-image: url("../../images/logo.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	background-color: rgb(236, 62, 155);
+}
+header {
+	display: flex;
+	width: 90%;
+	margin: auto;
+	align-items: center;
+	height: 10vh;
+}
+.logo-container {
+	flex: 3;
+	display: flex;
+}
+nav {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	font-weight: 800;
+}
+.logo-img {
+	filter: drop-shadow(2px 2px 8px white);
+}
+a.navs {
+	margin: 2px 0 0 15px;
+	color: violet;
+	font-size: 16px;
+	text-decoration: none;
+	transition: all 0.5s;
+	font-weight: 900;
+}
+a.nav-link {
+	text-decoration: none;
+	color: violet;
+	padding: 6px 13px;
+	border: 1px solid violet;
+	border-radius: 20px;
+	background-color: #ff1493;
+	margin: 0 10px;
+	transition: all 0.3s;
+}
+a.navs:hover {
+	color: white;
+}
+a.nav-link:hover {
+	border: 1px solid white;
+	color: white;
+}
+
+main {
+	width: 70%;
+	margin: 5% auto 0 auto;
+}
+.shout {
+	color: white;
+}
+.main-text {
+	color: white;
+	font-size: 75px;
+	font-weight: 900;
+}
+@media only screen and (max-width: 1024px) {
+	.main-text {
+		font-size: 65px;
+		text-align: center;
+	}
+	a.nav-link,
+	a.navs {
+		color: white;
+	}
+}
+
+@media only screen and (max-width: 768px) and (max-height: 1024px) {
+	main {
+		margin-top: 10%;
+	}
+	.shout {
+		font-size: 30px;
+	}
+	.main-text {
+		font-size: 70px;
+		text-align: left;
+	}
+	a.nav-link {
+		margin: 0 15px;
+		padding: 10px 40px;
+		color: white;
+		border-color: white;
+	}
+	a.navs {
+		color: white;
+	}
+	body {
+		background-image: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	main {
+		margin-top: 5%;
+	}
+	.main-text {
+		font-size: 60px;
+	}
+	body {
+		background-image: none;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	main {
+		width: 88%;
+		text-align: center;
+	}
+	.main-text {
+		font-size: 55px;
+		text-align: center;
+	}
+	body {
+		background-image: none;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	main {
+		margin-top: 20%;
+	}
+	.main-text {
+		font-size: 40px;
+	}
+	nav {
+		display: none;
+	}
+	div.logo-container {
+		margin-left: 20%;
+	}
+	body {
+		background-image: none;
+	}
+}

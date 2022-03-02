@@ -1,0 +1,56 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	background-color: white;
+}
+
+/* ================ Profile ===================  */
+
+.fa-arrow-left,
+.fa-home {
+	color: #ec3e9b;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+img.profile-pic {
+	width: 130px;
+	height: 130px;
+	background-color: white;
+	border: 5px solid white;
+	margin-top: -200px;
+	margin-left: 20px;
+}
+a#profile-pic:hover {
+	opacity: 0.7;
+}
+img.img-people:hover {
+	opacity: 0.7;
+}
+
+@media only screen and (max-width: 1024px) {
+
+	#left{
+		margin-left: -45px ;
+	}
+	.img-people{
+		height: 170px;
+		width: 120px;
+	}
+}
+@media only screen and (max-width: 375px) {
+
+	#left{
+		margin-left: -55px ;
+	}
+	.sidebar-right{
+		display: none;
+	}
+}
